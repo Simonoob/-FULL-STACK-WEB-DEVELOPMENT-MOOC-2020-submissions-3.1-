@@ -1,7 +1,7 @@
-POST http://localhost:3001/api/persons
+POST http://vast-scrubland-10234.herokuapp.com/api/persons
 Content-Type: application/json
 
 {
-    "name":"newName",
-    "number":"0123456789"
+    "name":"Aldo Baglio",
+    "number":"46385945"
 }

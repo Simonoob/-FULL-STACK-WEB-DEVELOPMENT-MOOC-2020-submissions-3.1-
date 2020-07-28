@@ -1,1 +1,1 @@
-GET http://localhost:3001/api/persons
+GET http://vast-scrubland-10234.herokuapp.com/api/persons
