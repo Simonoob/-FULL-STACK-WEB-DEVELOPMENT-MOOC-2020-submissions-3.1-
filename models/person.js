@@ -3,6 +3,7 @@ const uniqueValidator = require("mongoose-unique-validator");
 
 mongoose.set("useFindAndModify", false);
 
+// eslint-disable-next-line no-undef
 const password = process.env.MONGODB_PASSWORD;
 
 const url = `mongodb+srv://fullstack:${password}@cluster0.jjehi.mongodb.net/phonebook?retryWrites=true&w=majority`;
@@ -15,7 +16,7 @@ mongoose
     useUnifiedTopology: true,
     useCreateIndex: true,
   })
-  .then((result) => {
+  .then(() => {
     console.log("connected to MongoDB");
   })
   .catch((error) => {
@@ -46,6 +47,7 @@ personSchema.set("toJSON", {
 
 personSchema.plugin(uniqueValidator);
 
+// eslint-disable-next-line no-unused-vars
 const Person = mongoose.model("Person", personSchema);
 
 module.exports = mongoose.model("Person", personSchema);

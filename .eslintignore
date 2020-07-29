@@ -1,0 +1,7 @@
+build
+requests
+procfile
+.md
+node_modules
+.env
+.gitignore
